@@ -82,7 +82,7 @@ const Home = () => {
               Applications that leads to the success of the overall product
             </h3>
             <motion.a
-              href=''
+              href='#projects'
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
