@@ -2,15 +2,24 @@ import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
+
 import gitIcon from '/src/assets/svg/git.svg'
 import htmlIcon from '/src/assets/svg/html5.svg'
 import cssIcon from '/src/assets/svg/css3.svg'
 import reactIcon from '/src/assets/svg/react.svg'
 import javascriptIcon from '/src/assets/svg/javascript.svg'
 import wordpressIcon from '/src/assets/svg/wordpress.svg'
-import githubIcon from '/src/assets/svg/github.svg' 
-import vscodeIcon from '/src/assets/svg/vscode.svg' 
-import figmaIcon from '/src/assets/svg/figma.svg' 
+import githubIcon from '/src/assets/svg/github.svg'
+import npmIcon from '/src/assets/svg/npm.svg'
+import vscodeIcon from '/src/assets/svg/vscode.svg'
+import nodejsIcon from '/src/assets/svg/node-js.svg'
+import phpIcon from '/src/assets/svg/php.svg' 
+import sketchIcon from '/src/assets/svg/sketch.svg'
+import typescriptIcon from '/src/assets/svg/typescript.svg'
+import figmaIcon from '/src/assets/svg/figma.svg'
+import sqlIcon from '/src/assets/svg/sql.svg'
+import powerPointIcon from '/src/assets/svg/powerpoint.svg'
+import adobeIndesignIcon from '/src/assets/svg/adobe-indesign.svg'
 import adobeXdIcon from '/src/assets/svg/adobe-xd.svg'
 import uiUxIcon from '/src/assets/svg/ui-ux.svg'
 
@@ -158,14 +167,34 @@ const Home = () => {
                   icon={vscodeIcon}
                   alt='VsCode Icon'
                   label='VsCode'
-                /> 
-                <SkillButton icon={figmaIcon} alt='Figma Icon' label='Figma' /> 
+                />
+                <SkillButton icon={npmIcon} alt='NPM Icon' label='NPM' />
+                <SkillButton
+                  icon={nodejsIcon}
+                  alt='Nodejs Icon'
+                  label='Node JS'
+                />
+                <SkillButton icon={phpIcon} alt='PHP Icon' label='PHP' /> 
+                <SkillButton
+                  icon={typescriptIcon}
+                  alt='TypeScript Icon'
+                  label='TypeScript'
+                />
+                <SkillButton icon={figmaIcon} alt='Figma Icon' label='Figma' />
+                <SkillButton icon={sqlIcon} alt='SQL Icon' label='SQL' /> 
+                <SkillButton
+                  icon={adobeIndesignIcon}
+                  alt='Adobe Indesign Icon'
+                  label='Adobe Indesign'
+                />
                 <SkillButton
                   icon={adobeXdIcon}
                   alt='Adobe Xd Icon'
                   label='Adobe Xd'
                 />
                 <SkillButton icon={uiUxIcon} alt='UI/UX Icon' label='UI/UX' />
+                <SkillButton icon={sketchIcon} alt='Sketch Icon' label='Sketch' />
+                <SkillButton icon={powerPointIcon} alt='Power Point Icon' label='Power Point' />
               </div>
             </div>
           </div>
@@ -201,7 +230,7 @@ const Home = () => {
               dynamicBullets: true,
             }}
             // freeMode={true}
-            modules={[Pagination,  Navigation]}
+            modules={[Pagination, Navigation]}
           >
             {loading ? (
               <>
